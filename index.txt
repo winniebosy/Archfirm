@@ -1,0 +1,15 @@
+Accessibility Issues encountered when tackling this project
+
+
+
+The use of Buttons and links
+Rule: Actions where users affect the website’s back-end or front-end use Buttons.
+      Actions where users won’t affect the website at all use links.
+Read more here: https://uxmovement.com/buttons/when-to-use-a-button-or-link/
+
+
+ARIA-LABELS ON LINKS:
+Use an aria-label attribute in the link code that provides specific information to the screen reader user.
+eXAMPLE: <p><a href=”taxhike.html” aria-label=”Read more about Marlborough tax hike”>Read more…</a></p>
+
+READ MORE HERE: https://accessiblewebsiteservices.com/accessible-links-when-to-use-aria-labels/
