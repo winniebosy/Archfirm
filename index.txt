@@ -13,3 +13,18 @@ Use an aria-label attribute in the link code that provides specific information 
 eXAMPLE: <p><a href=”taxhike.html” aria-label=”Read more about Marlborough tax hike”>Read more…</a></p>
 
 READ MORE HERE: https://accessiblewebsiteservices.com/accessible-links-when-to-use-aria-labels/
+
+
+
+
+First of all, what’s a CTA?
+
+CTA stands for call-to-action and refers to the prompt for users to take an action. It can be a button, a hyperlink, or even an image but the text generally denotes the action you want a user to take. 
+read more here : https://uxcontent.com/learn-more-is-not-enough-a-case-for-descriptive-cta/
+ 
+
+
+ Embedding an accessible email to us:
+ <a href="mailto:info@example.com?subject=subject&cc=cc@example.com">
+            <img src="Images/envelope-regular.svg" alt="Email us">
+        </a>
