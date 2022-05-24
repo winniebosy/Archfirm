@@ -6,31 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Architectural Digest</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- navigation -->
     <nav class="nav-primary__navigation">
+        <div class="nav-list-logo" aria-label="ArchDesign Homepage" role="logo">
+            <a class="nav-brand" href="#Home">ArchDesign.</a>
+        </div>
+        <!-- menu for smaller screens -->
+        <button id="toggle" aria-expanded="false">
+            <img  role ="navigation" src="Images/bars-solid.svg" aria-label ="navigation menu">
+        </button>
         <ul class="nav-menu">
-            <li class="nav-list- item one" aria-label="ArchDesign Homepage" role="logo">
-                <a href="#Home">ArchDesign.</a>
-            </li>
-
-            <li class="nav-list-item two">
+            <li class="nav-list-item-two">
                 <a href="#">Home</a>
             </li>
 
-            <li class="nav-list- item three">
+            <li class="nav-list-item-three">
                 <a href="#">About</a>
             </li>
-            <li class="nav-list- item four">
+            <li class="nav-list-item-four">
                 <a href="#">Services</a>
             </li>
-            <li class="nav-list- item five">
+            <li class="nav-list-item-five">
                 <a href="#">Projects</a>
             </li>
 
-            <li class="nav-list-item six">
+            <li class="nav-list-item-six">
                 <a href="#">Contacts</a>
             </li>
         </ul>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+:root {
+    --main-background-color: #131F26;
+    --font-main-color: #CDCDD8;
+    --font-heading-color: #FED866;
+    --main-font-family: 'Libre Baskerville', serif;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+
+/* navigation section */
+
+.nav-primary__navigation {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* logo */
+
+.nav-list-logo a {
+    font-family: var(--main-font-family);
+    font-size: 200%;
+    color: var(--font-heading-color);
+    display: flex;
+    height: auto;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+li[class*="nav-list-item"] {
+    padding: 0.5rem 1.5rem;
+    font-size: 110%;
+}
+
+li a:link {
+    text-decoration: none;
+    color: #CDCDD8;
+}
+
+li a:visited {
+    color: #d2d2f0;
+}
+
+li a:hover {
+    color: var(--font-heading-color);
+    text-decoration: underline dotted;
+}
+
+
+/* navigation section ends here */
+
+
+/* continue from here*/
+
+
+/* for mobile phones */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {}
+
+
+/* tablets */
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {}
