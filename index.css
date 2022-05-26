@@ -294,6 +294,17 @@ img .about-section__information {
 /* about section ends here */
 
 
+/* services section starts here */
+
+.services-section {
+    border: 2px solid red;
+    margin: 2rem 0.5rem 2rem 0.5rem;
+}
+
+
+/* services section ends here */
+
+
 /* for mobile phones */
 
 
