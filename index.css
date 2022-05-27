@@ -276,7 +276,6 @@ img .about-section__information {
 .about-section__link {
     margin-top: 2rem;
     margin-left: 0.5rem;
-    ;
 }
 
 .about-section__link a {
@@ -296,13 +295,133 @@ img .about-section__information {
 
 /* services section starts here */
 
+.services-section__info-construction {}
+
+.services-section__info-construction {
+    line-height: 1.8rem;
+    border: 2px solid rgba(19, 28, 34, 0.7);
+    background-color: rgba(19, 28, 34, 0.7);
+    color: var(--font-main-color);
+    grid-area: cons;
+    padding: 0.8rem;
+}
+
+.services-section__img {
+    background-image: url('Images/services2.jpg');
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    object-fit: contain;
+    margin-right: 2rem;
+    grid-area: img;
+}
+
+.services-section__info-design {
+    line-height: 1.8rem;
+    border: 2px solid rgba(19, 28, 34, 0.7);
+    background-color: rgba(19, 28, 34, 0.7);
+    color: var(--font-main-color);
+    grid-area: dgn;
+    padding: 0.8rem;
+}
+
+.services-title {
+    color: var(--font-main-color);
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .services-section {
-    border: 2px solid red;
+    border-top: 1px solid var(--font-heading-color);
+    border-right: 1px solid var(--font-heading-color);
     margin: 2rem 0.5rem 2rem 0.5rem;
+    display: grid;
+    margin: 2rem;
+    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: "cons cons . ." "img img img img" ".  . dgn dgn"
 }
 
 
 /* services section ends here */
+
+
+/* projects section */
+
+.projects-section {
+    background-color: rgba(19, 28, 34, 0.7);
+    margin: 2rem;
+}
+
+.projects-section-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    padding: 1rem;
+    color: var(--font-main-color);
+}
+
+.projects-section-info h2 {
+    color: var(--font-heading-color);
+    margin: auto;
+}
+
+.projects-section-info p {
+    color: var(--font-main-color);
+    line-height: 1.8;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+.project-section__link {
+    margin: auto;
+}
+
+.project-section__link a {
+    border: 1px solid var(--font-heading-color);
+    padding: 10px 20px;
+    color: var(--font-heading-color);
+    text-decoration: none;
+}
+
+.project-section__link a:hover {
+    text-decoration: underline dotted;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    padding: 2rem;
+}
+
+article[class*="card"] img {
+    margin: 1rem;
+    object-fit: cover;
+    width: 320px;
+    height: 350px;
+}
+
+.img-link a {
+    border: 1px solid var(--font-heading-color);
+    padding: 5px 8px;
+    color: var(--font-heading-color);
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.img-link a:hover {
+    text-decoration: overline dotted;
+    background-color: #0a0800;
+}
+
+
+/* project section ends here */
 
 
 /* for mobile phones */
