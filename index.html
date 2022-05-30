@@ -12,9 +12,9 @@
 <body>
     <header>
         <!-- navigation -->
-        <nav class="nav-primary__navigation">
+        <nav class="nav-primary__navigation" aria-label="primary">
             <div class="nav-list-logo">
-                <a class="nav-brand" href="#" aria-label="ArchDesign Homepage">ArchDesign.</a>
+                <a class="nav-brand" href="#" aria-label="ArchDesign-Homepage">ArchDesign.</a>
             </div>
             <!-- menu for smaller screens -->
             <button id="toggle" aria-expanded="false">
@@ -53,22 +53,24 @@
             </div>
             <div class="aside-styling">
 
-                <aside class="aside-hero__section" aria-label=" Current trends in  real estate and property">
-                    <ul class="aside-menu">
-                        <li class="aside-list-itemOne">
-                            <a class="#">Real Estate</a>
-                        </li>
-                        <li class="aside-list-itemTwo">
-                            <a class="#">Design Property</a>
-                        </li>
-                        <div class="rule"></div>
-                        <li class="aside-list-itemOne">
-                            <a href="#"><img role="img" class="facebook-page" aria-label="ArchDesign Facebook page" src="Images/facebook-f-brands.svg"></a>
-                        </li>
-                        <li class="aside-list-itemTwo">
-                            <a class="#"><img role="img" class="instagram-page" aria-label="ArchDesign Instagram Page" src="Images/instagram-brands.svg"></a>
-                        </li>
-                    </ul>
+                <aside class="aside-hero__section">
+                    <nav aria-label="secondary-Current trends in  real estate and property">
+                        <ul class="aside-menu">
+                            <li class="aside-list-itemOne">
+                                <a class="#">Real Estate</a>
+                            </li>
+                            <li class="aside-list-itemTwo">
+                                <a class="#">Design Property</a>
+                            </li>
+                            <div class="rule"></div>
+                            <li class="aside-list-itemOne">
+                                <a href="#"><img role="img" class="facebook-page" aria-label="ArchDesign Facebook page" src="Images/facebook-f-brands.svg"></a>
+                            </li>
+                            <li class="aside-list-itemTwo">
+                                <a class="#"><img role="img" class="instagram-page" aria-label="ArchDesign Instagram Page" src="Images/instagram-brands.svg"></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </aside>
 
                 <div class="hero-img" role="img" aria-label="A modern styled living room. The room features a wooden floor with grey-whitish carpet rug, a wooden console table at the center surrounded by two small-sized brown-leathered consoles, a plain-grey sofa accented with five colored pillows, a wooden chair accented with one pillow on the right and two metal chairs each accented with patterned throw pillows. On the far right is a golden lamp shade and flower vases placed next to a wide window."></div>
@@ -85,7 +87,11 @@
         </section>
         <!-- about section -->
         <section class="about-section">
-            <div class="about-img" role="img" aria-label="A modern styled living room. The room features a wooden floor with grey-whitish carpet rug, a wooden console table at the center surrounded by two small-sized brown-leathered consoles, a plain-grey sofa accented with five colored pillows, a wooden chair accented with one pillow on the right and two metal chairs each accented with patterned throw pillows. On the far right is a golden lamp shade and flower vases placed next to a wide window."></div>
+            <div class="about-img" role="img" aria-describedby="about-section-img-desc"></div>
+            <p id="about-section-img-desc">
+                A modern styled living room. The room features a wooden floor with grey-whitish carpet rug, a wooden console table at the center surrounded by two small-sized brown-leathered consoles, a plain-grey sofa accented with five colored pillows, a wooden chair
+                accented with one pillow on the right and two metal chairs each accented with patterned throw pillows. On the far right is a golden lamp shade and flower vases placed next to a wide window.
+            </p>
             <section class="about-section__information">
                 <h2>We turn your ideas to reality</h2>
                 <p>
@@ -175,19 +181,21 @@
     <!-- main section ends here -->
     <!-- footer section -->
     <footer>
-        <h2 class="footer-heading ">Get in touch with us for more information</h2>
+        <h2>Get in touch with us for more information</h2>
         <div class="footer-contacts ">
             <a class="contact-mail " href="mailto:info@example.com?subject=subject&cc=cc@example.com ">
-                <img role="img " src="Images/envelope-regular.svg " aria-label="Email us ">
+                <img role="img " src="Images/envelope-regular.svg " aria-label="Email us">
             </a>
             <a class="contact-call " href="# ">
                 <img role="img " src="Images/phone-solid.svg " aria-label="Call us through 0603555123 "><span class="phone-contacts ">0603555123</span>
             </a>
         </div>
         <form>
-            <label for="email ">Email</label>
-            <input type="email " name="email " required>
-            <input type="submit " value="submit ">
+            <div class="footer-form">
+                <label for="email" class="visuallyhidden" aria-label="Subscribe to our news letters">Email </label>
+                <input type="email" name="email " required>
+                <input type="submit" value="Subscribe">
+            </div>
         </form>
     </footer>
     <!-- footer section ends here -->

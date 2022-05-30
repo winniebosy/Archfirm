@@ -86,6 +86,20 @@ li a:active {
 }
 
 
+/* visually hides the image description since its too long for alt */
+
+#about-section-img-desc {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+
 /* navigation section ends here */
 
 
@@ -422,6 +436,77 @@ article[class*="card"] img {
 
 
 /* project section ends here */
+
+
+/* footer section */
+
+footer h2 {
+    color: var(--font-heading-color);
+    margin: 1rem;
+    text-align: center;
+}
+
+.footer-contacts {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer-contacts img {
+    width: 32px;
+    height: 32px;
+    color: var(--font-main-color);
+}
+
+.phone-contacts {
+    color: var(--font-main-color);
+    padding: 0.3rem;
+    font-size: small;
+    margin-left: -0.8rem;
+    margin-bottom: -1rem;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.footer-form {
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    border: var(--font-heading-color);
+}
+
+
+/* visually hides the email text */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input[type=email] {
+    padding: 5px 15px;
+}
+
+input[type=submit] {
+    padding: 5px 8px;
+    background-color: var(--font-heading-color);
+    border: 1px solid var(--font-heading-color);
+}
+
+
+/* footer section ends here */
 
 
 /* for mobile phones */
