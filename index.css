@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-:root {
+ :root {
     --main-background-color: #131F26;
     --font-main-color: #CDCDD8;
     --font-heading-color: #FED866;
@@ -8,8 +8,8 @@
 }
 
 *,
-::before,
-::after {
+ ::before,
+ ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,8 +309,6 @@ img .about-section__information {
 
 /* services section starts here */
 
-.services-section__info-construction {}
-
 .services-section__info-construction {
     line-height: 1.8rem;
     border: 2px solid rgba(19, 28, 34, 0.7);
@@ -518,6 +516,7 @@ input[type=submit] {
 /* tablets */
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
+    /* nav section */
     ul.nav-menu {
         border: 2px solid red;
         display: flex;
@@ -531,5 +530,119 @@ input[type=submit] {
     img .menu-button {
         width: 32px;
         height: 32px;
+    }
+    .hero-title {
+        font-size: 120%;
+        padding: 1rem;
+        max-width: 100%;
+        margin: auto;
+    }
+    .hero-subsection {
+        font-size: 0.7rem;
+        word-spacing: 1px;
+        max-width: 100%;
+        height: auto;
+        word-wrap: normal;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* nav section ends here */
+    /*aside section */
+    .aside-styling {
+        display: grid;
+    }
+    .rule {
+        border: none;
+    }
+    .aside-hero__section {
+        height: 10vh;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .aside-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: space-between;
+        margin: auto;
+    }
+    .aside-menu a {
+        font-size: 0.8rem;
+    }
+    /* aside section ends here */
+    .img-company-partners {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*about section */
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .about-section__information {
+        margin: 0.5rem 0.5rem 1rem 0.5rem;
+        height: auto;
+        font-size: 0.8rem;
+    }
+    .about-section__information h2 {
+        font-size: 140%;
+        padding: 0.5rem;
+    }
+    /* about section ends here */
+    /* services section */
+    .services-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .services-section__info-construction {
+        width: 100%;
+        height: auto;
+    }
+    .services-section h2 {
+        font-size: 140%;
+        padding: 0.5rem;
+    }
+    img .services-section__img {
+        object-fit: fill;
+    }
+    /* services section ends here */
+    /* project section */
+    .projects-section-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    .projects-section-info h2 {
+        font-size: 130%;
+    }
+    .project-gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    /* project section ends here */
+    footer h2 {
+        font-size: 120%;
     }
 }
