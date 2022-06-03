@@ -22,6 +22,26 @@ body {
 }
 
 
+/* skip menu */
+
+#skip-to-main a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--font-heading-color);
+}
+
+#skip-to-main a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+
 /* navigation section */
 
 .nav-primary__navigation {
@@ -88,7 +108,7 @@ li a:active {
 
 /* visually hides the image description since its too long for alt */
 
-#about-section-img-desc {
+p[id*="img-desc"] {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
