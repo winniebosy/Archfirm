@@ -20,14 +20,19 @@
         <nav class="nav-primary__navigation" aria-label="primary">
             <div class="nav-list-logo">
                 <a class="nav-brand" href="#" aria-label="ArchDesign-Homepage">ArchDesign.</a>
+                <button id="toggle" aria-expanded="false" aria-controls="mobile-nav-menu">
+                    <span class ="fa-bars">
+                        &#9776;
+                        
+                    </span>
+                    Menu
+            </button>
             </div>
             <!-- menu for smaller screens -->
-            <button id="toggle" aria-expanded="false">
-            menu
-        </button>
-            <ul class="nav-menu">
+
+            <ul class="nav-menu hidden" id="mobile-nav-menu">
                 <li class="nav-list-item-two">
-                    <a href="#">Home</a>
+                    <a href="#" aria-current="page">Home</a>
                 </li>
 
                 <li class="nav-list-item-three">
@@ -95,7 +100,7 @@
         </div>
     </section>
     <!-- about section -->
-    <main id="main-content">
+    <main id="main-content" tabindex="0">
         <section class="about-section">
             <div class="about-img" role="img" aria-labelledby="img-desc-about"></div>
             <p id="img-desc-about">
@@ -230,6 +235,7 @@
         </form>
     </footer>
     <!-- footer section ends here -->
+    <script src="index.js"></script>
 </body>
 
 </html>
