@@ -55,3 +55,25 @@ Code Snippet
 }
 
 Note that interactive elements are still active when using this code, so it is not suitable to hide other parts of forms but the labels.
+
+
+Javascript trap focus;
+more notes on this link : https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
+
+
+aria-labelledBy is used to provide titles to non-iteractive elements/ non-semantic elements.
+aria-describeby is used to provide descriptions to non-semantic elements 
+ example
+ div role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+  <header>
+    <h1 id="dialog-title">Name Entry</h1>
+    <p id="dialog-description">Please enter your full name.</p>
+  </header>
+
+
+
+  js active elements 
+  document.activeElement helps us find the active element.
+  Active Elements are the HTML elements that have recently been focused on by the user. If a user clicks on a button that means the button was focused or it was active.
+  more information here : https://www.educative.io/answers/what-is-the-html-activeelement-property
+  also here: https://dev.to/open-wc/mind-the-document-activeelement-2o9a

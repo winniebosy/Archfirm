@@ -564,11 +564,18 @@ input[type=submit] {
         border: 2px solid var(--font-heading-color);
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-content: flex-end;
         margin-right: 0.9rem;
     }
     .hidden {
         display: none;
+    }
+    .nav-menu:focus {
+        outline-width: 3px;
+    }
+    .nav-menu:active {
+        outline-width: 3px;
     }
     .fa-bars {
         font-size: bolder;
