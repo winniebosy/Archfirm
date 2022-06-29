@@ -11,21 +11,8 @@ function openMenu() {
 menubtn.addEventListener('click', openMenu);
 
 
-//let li = document.querySelector('.nav-list-item-two');
-
-
-
-
-
-
-
-
-
-
-
-
+//FOCUS TRAPPING KEYBOARD
 function trapFocus() {
-
     /* FOCUS TRAP METHOD  */
     //select all the elements that need to be focused
     let focusElements = document.querySelectorAll('button[id*="toggle"], a[class*="nav-list-link"');
@@ -41,17 +28,15 @@ function trapFocus() {
         focusElement.addEventListener('keydown', function(e) {
             let code = e.key;
             if (!code) {
-                return;
+                return; /* breaks the execution */
             }
             if (e.shiftKey) /* shift + tab */ {
                 if (document.activeElement === firstFocusElement) {
                     lastFocusElement.focus();
                     e.preventDefault();
                     console.log('focused on first last element');
-
-
                 }
-            } else {
+            } else { /* if tab ke is selected */
                 if (document.activeElement === lastFocusElement) {
                     firstFocusElement.focus();
                     e.preventDefault();
@@ -60,10 +45,6 @@ function trapFocus() {
                 }
 
             }
-
-
-
-
 
         });
     });
