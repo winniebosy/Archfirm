@@ -77,3 +77,15 @@ aria-describeby is used to provide descriptions to non-semantic elements
   Active Elements are the HTML elements that have recently been focused on by the user. If a user clicks on a button that means the button was focused or it was active.
   more information here : https://www.educative.io/answers/what-is-the-html-activeelement-property
   also here: https://dev.to/open-wc/mind-the-document-activeelement-2o9a
+
+
+
+  To hide an element from a screen reader add the attribute aria-hidden ="true". However, ensure that you do not put an icon/image or whatever graphics inside a focusable element. This is because the screen reader will still access it. The best approach is to wrap the element inside a div tag with the focusable element as a sibling.
+  example
+  <div class="back-home-page">
+            <span aria-hidden="true">&#x2190;</span>
+            <a href="index.html" aria-label="Back to Home Page">
+                 Home Page
+
+            </a>
+        </div>
