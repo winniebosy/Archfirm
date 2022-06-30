@@ -89,3 +89,9 @@ aria-describeby is used to provide descriptions to non-semantic elements
 
             </a>
         </div>
+
+
+Learning tables is interesting. You cannot include <p></p>/ block elements inside data tables. Thus, the only options left is use of <span></span> with an id then visually hidding it. So that it is next to the <caption></caption>.
+Even for providing aria-describedby for imag alt with long descriptions use span with an id.
+<summary></summary> for tables in html5 is depreciated. It is not supported.
+Further information on tables and captions can be found here:https://www.w3.org/WAI/tutorials/tables/caption-summary/
