@@ -99,3 +99,8 @@ Further information on tables and captions can be found here:https://www.w3.org/
 
 
 To make a table responsive add the data-label attribute with the corresponding column.
+link: https://adrianroselli.com/2017/11/a-responsive-accessible-table.html
+
+
+
+The error/warning alt image text has the same alt text is as a result of having alt text that is similar to a paragraph near the image. The the alt text be succinct.
