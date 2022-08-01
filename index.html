@@ -19,7 +19,7 @@
             <a href="#footer">Go to footer</a>
         </div>
         <!-- navigation -->
-        <nav class="nav-primary__navigation" aria-label="primary">
+        <nav class="nav-primary__navigation" aria-label="primary navigation">
             <div class="nav-list-logo">
                 <a class="nav-brand" href="#" aria-label="ArchDesign-Homepage">ArchDesign.</a>
                 <button id="toggle" aria-expanded="false" aria-controls="mobile-nav-menu">
@@ -71,18 +71,19 @@
                     <nav class="aside-nav" aria-label="secondary-Current trends in  real estate and property">
                         <ul class="aside-menu">
                             <li class="aside-list-itemOne">
-                                <a class="#">Real Estate</a>
+                                <a href="#">Real Estate</a>
                             </li>
                             <li class="aside-list-itemTwo">
-                                <a class="#">Design Property</a>
+                                <a href="#">Design Property</a>
                             </li>
-                            <div class="rule"></div>
+
                             <li class="aside-list-itemOne">
                                 <a href="#"><img role="img" class="facebook-page" aria-label="ArchDesign Facebook page" src="Images/facebook-f-brands.svg"></a>
                             </li>
                             <li class="aside-list-itemTwo">
-                                <a class="#"><img role="img" class="instagram-page" aria-label="ArchDesign Instagram Page" src="Images/instagram-brands.svg"></a>
+                                <a href="#"><img role="img" class="instagram-page" aria-label="ArchDesign Instagram Page" src="Images/instagram-brands.svg"></a>
                             </li>
+                            <div class="rule"></div>
                         </ul>
                     </nav>
                 </aside>
@@ -108,7 +109,7 @@
     <!-- about section -->
     <main id="main-content" tabindex="0">
         <section class="about-section" id="about-section">
-            <div class="about-img" role="img" aria-describedby="img-desc-about"></div>
+            <div class="about-img" role="img" aria-labelledby="img-desc-about"></div>
             <p id="img-desc-about">
                 A sample of a modern styled living room. The room features a wooden floor with grey-whitish carpet rug, a wooden console table at the center surrounded by two small-sized brown-leathered consoles, a plain-grey sofa accented with five colored pillows,
                 a wooden chair accented with one pillow on the right and two metal chairs each accented with patterned throw pillows. On the far right is a golden lamp shade and flower vases placed next to a wide window.
@@ -161,7 +162,7 @@
                         A sample of Modern bathroom design that features a golden mirror, smokey granite walls, a white sink and a golden faucet"
                     </p>
                     <div class="img-link">
-                        <a href="# " aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label="Explore more details about project One ">Project Details</a>
                     </div>
                 </article>
 
@@ -171,7 +172,7 @@
                         sample of a a modern wooden stairs that feature dark steel side-rails and low hanging golden-round chandeliers.On the right is a white wall with several white photo frames.
                     </p>
                     <div class="img-link ">
-                        <a href="# " aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label="Explore more details about project One ">Project Details</a>
                     </div>
                 </article>
 
@@ -182,7 +183,7 @@
                         and two bedside lamps in a distance"
                     </p>
                     <div class=" img-link ">
-                        <a href="# " aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label="Explore more details about project One ">Project Details</a>
                     </div>
                 </article>
 
@@ -192,7 +193,7 @@
                         sample of a green themed living room that features a pink wing-chair, several vases with plants and a low hanging golden photo frame
                     </p>
                     <div class="img-link ">
-                        <a href="#" aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label="Explore more details about project Two">Project Details</a>
                     </div>
                 </article>
 
@@ -202,7 +203,7 @@
                         A sample of a modern-styled kitchen that features dark granite counter-tops, wooden cabinets and an electric chimney.
                     </p>
                     <div class="img-link ">
-                        <a href="# " aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label=" Explore more details about project three">Project Details</a>
                     </div>
                 </article>
 
@@ -212,7 +213,7 @@
                         A sample of a contemporary styled outdoor decor featuring a metalic-bowl shaped chair with a round printed rug underneath. On the side is a stone-console decorated with several cactus-like plants.Behind is a stone wall and a large window.
                     </p>
                     <div class="img-link ">
-                        <a href="# " aria-label="Explore more details about project One ">Project Details</a>
+                        <a href="#" aria-label="Explore more details about project four ">Project Details</a>
                     </div>
                 </article>
 
@@ -227,17 +228,17 @@
             <a class="contact-mail " href="mailto:info@example.com?subject=subject&cc=cc@example.com ">
                 <img src="Images/envelope-regular.svg " aria-label="Email us">
             </a>
-            <a class="contact-call " href="# ">
+            <a class="contact-call " href="#">
                 <img src="Images/phone-solid.svg " aria-label="Call us through 0603555123 "><span class="phone-contacts ">0603555123</span>
             </a>
         </div>
         <form>
             <div class="footer-form">
                 <label for="email" class="visuallyhidden">Email </label>
-                <input type="email" name="email" aria-label="email">
+                <input type="email" name="email" id="email" aria-label="email">
 
                 <label for="subscribe" class="visuallyhidden">Subscribe</label>
-                <input type="submit" value="Subscribe" aria-label="subscribe">
+                <input type="submit" value="Subscribe" id="subscribe" aria-label="subscribe">
 
             </div>
         </form>
