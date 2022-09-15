@@ -33,7 +33,7 @@ body {
     width: 50%;
     height: auto;
     padding-right: 0;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 img {
@@ -90,7 +90,7 @@ header a:active {
 input[class="input"] {
     width: 95%;
     padding: 0.8rem;
-    margin: 1rem;
+    margin: 1.5rem 1rem;
 }
 
 fieldset {
@@ -142,7 +142,7 @@ button[type="submit"] {
 }
 
 .reqField {
-    color: rgb(250, 58, 58);
+    color: #fa3a3a;
 }
 
 .req {
@@ -150,6 +150,30 @@ button[type="submit"] {
     padding: 1rem;
     text-align: center;
     font-weight: bold;
+}
+
+#telDesc {
+    margin: -0.5rem 0 0.8rem 1rem;
+}
+
+#telDesc:focus {
+    /* border: 1px solid #fa3a3a; */
+    color: #fa3a3a;
+    padding: 0.5rem;
+}
+
+#fnameError,
+#lnameError {
+    color: #fa3a3a;
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+}
+
+#fnameError:focus,
+#lnameError:focus {
+    font-weight: bold;
+    color: #fa3a3a;
+    padding: 0 0.8rem;
 }
 
 
