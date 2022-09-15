@@ -1,6 +1,15 @@
-    img {
-        border: 2px solid red;
-        /* height: 100px;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+:root {
+    --main-background-color: #131F26;
+    --font-main-color: #CDCDD8;
+    --font-heading-color: #FED866;
+    --main-font-family: 'Libre Baskerville', serif;
+    --font-link-color: #ACC8E5
+}
+
+img {
+    border: 2px solid red;
+    /* height: 100px;
     width: 200px;
 */
-    }
+}
