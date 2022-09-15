@@ -10,32 +10,32 @@
 </head>
 
 <body>
+    <main>
+        <div class="signup-form">
+            <section class="bg-img">
+                <img src="Images/buildings-nackground.svg" alt="">
+            </section>
 
-    <div class="signup-form">
-        <section class="bg-img">
-            <img src="Images/buildings-nackground.svg" role="img" alt="">
-        </section>
-
-        <section class="form-content">
-            <header>
-                <h1>Don't Missout!</h1>
-                <p>Sign up to receive exclusive offers and promotions from Archdigest.</p>
-                <p>In order to receive the best deals that are inline with your preferences</p>
-                <p> Already have an account? <a href="#">Sign in here</a></p>
-            </header>
-            <main>
+            <section class="form-content">
+                <header>
+                    <h1>Don't Miss out!</h1>
+                    <p>Sign up to receive exclusive offers and promotions from Archdigest.</p>
+                    <p>In order to receive the best deals that are inline with your preferences.</p>
+                    <p class="signin-link"> Already have an account? <a href="#">Sign in here</a></p>
+                </header>
                 <form>
+                    <p class="req"><strong>Required fields are indicated with a ' * '.</strong></p>
                     <label for="firstName"> First Name <span class="reqField">*</span></label>
-                    <input type="text" id="firstName" name="firstName" required>
+                    <input type="text" id="firstName" name="firstName" class="input" required>
                     <label for="lastName"> Last Name<span class="reqField">*</span> </label>
-                    <input type="text" id="lastName" name="lastName" required>
+                    <input type="text" id="lastName" name="lastName" class="input" required>
                     <label for="telNumber"> Phone Number </label>
                     <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3} -->
-                    <input type="tel" id="telNumber" name="telNumber">
+                    <input type="tel" id="telNumber" name="telNumber" class="input">
                     <label for="email">Email<span class="reqField">*</span></label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="password"><span class="reqField">*</span>Password </label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="email" id="email" name="email" class="input" required>
+                    <label for="password">Password<span class="reqField">*</span> </label>
+                    <input type="password" id="password" name="password" class="input" required>
 
                     <!-- checkboxes -->
                     <fieldset>
@@ -63,8 +63,8 @@
                     <!-- submit button -->
                     <button type="submit" id="submit-btn"> Sign Up</button>
                 </form>
-            </main>
-        </section>
+    </main>
+    </section>
 
     </div>
 
