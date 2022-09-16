@@ -74,6 +74,6 @@ email.addEventListener('input', (e) => {
         mailError.textContent = '✔️ OK';
     } else if (!validateEmail(userEmail)) {
         mailError.textContent = 'Error: wrong email format';
-        mailError.focus()
+        mailError.focus();
     }
 })
