@@ -93,6 +93,10 @@ input[class="input"] {
     margin: 1.5rem 1rem;
 }
 
+label {
+    font-size: 1.2rem;
+}
+
 fieldset {
     padding: 1rem;
     margin: 0.8rem;
@@ -152,7 +156,8 @@ button[type="submit"] {
     font-weight: bold;
 }
 
-#telDesc {
+#telDesc,
+#emailDesc {
     margin: -0.5rem 0 0.8rem 1rem;
 }
 
@@ -163,14 +168,18 @@ button[type="submit"] {
 }
 
 #fnameError,
-#lnameError {
+#lnameError,
+#telError,
+#emailError {
     color: #fa3a3a;
     margin-bottom: 0.8rem;
     margin-left: 1rem;
 }
 
 #fnameError:focus,
-#lnameError:focus {
+#lnameError:focus,
+#telError:focus,
+#emailError:focus {
     font-weight: bold;
     color: #fa3a3a;
     padding: 0 0.8rem;
