@@ -3,7 +3,7 @@ inputLastName = document.querySelector('#lastName');
 let phoneNumber = document.querySelector('#telNumber')
     // console.log(inputFirstName)
     //listening to user input for first name
-inputFirstName.addEventListener('input', (e) => {
+inputFirstName.addEventListener('blur', (e) => {
     let userInput = inputFirstName.value;
     //console.log(userInput)
     let errDisplay = document.querySelector('#fnameError')
@@ -19,7 +19,7 @@ inputFirstName.addEventListener('input', (e) => {
 
 });
 //listening to user input for last name
-inputLastName.addEventListener('input', (e) => {
+inputLastName.addEventListener('blur', (e) => {
     let userInput = inputLastName.value;
     console.log(userInput)
     let errDisplay = document.querySelector('#lnameError')
@@ -42,8 +42,7 @@ function validatePhoneNumber(telnumber) {
     return re.test(telnumber)
 
 }
-
-phoneNumber.addEventListener('input', (e) => {
+phoneNumber.addEventListener('blur', (e) => {
     let userTelNumber = phoneNumber.value;
     let phoneErrorDisplay = document.querySelector('#telError');
     if (!validatePhoneNumber(userTelNumber)) {
@@ -65,8 +64,7 @@ function validateEmail(mail) {
 }
 
 let email = document.querySelector('#email');
-
-email.addEventListener('input', (e) => {
+email.addEventListener('blur', (e) => {
     let userEmail = email.value;
     let mailError = document.querySelector('#emailError');
 
